@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvFunnyPictures"
+        android:layout_width="200dp"
+        android:layout_height="280dp"
+        android:text="Смешные собаки"
+        android:textSize="25sp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvHabits"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/tvQuotes"
+        android:padding="40dp"
+        android:drawableTop="@drawable/birthday_dog_animal_15962" />
+
+    <TextView
+        android:id="@+id/tvHabits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="Привычки собак"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvFunnyPictures"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ivAnecdotes"
+        android:drawableTop="@drawable/barbell_dog_animal_15974" />
+
+    <TextView
+        android:id="@+id/tvQuotes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Цитаты про собак"
+        android:textSize="25sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/ivAuthor"
+        app:layout_constraintEnd_toStartOf="@+id/ivAnecdotes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/shoc_green"
+        app:layout_constraintTop_toBottomOf="@+id/tvFunnyPictures"
+        android:paddingTop="70dp"
+        android:drawableTop="@drawable/hulahoop_dog_animal_15957" />
+
+    <TextView
+        android:id="@+id/ivAnecdotes"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        android:background="@color/green_lite"
+        android:text="Анекдоты про собак"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:padding="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvFunnyPictures"
+        app:layout_constraintTop_toBottomOf="@+id/tvHabits"
+        app:layout_constraintBottom_toTopOf="@+id/tvSigns"
+        android:drawableTop="@drawable/russel_dog_animal_15954" />
+    <TextView
+        android:id="@+id/ivAuthor"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:background="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuotes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Об авторе"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:drawableLeft="@drawable/rich_dog_animal96" />
+
+    <TextView
+        android:id="@+id/tvSigns"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivAuthor"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/birus"
+        android:text="Приметы про собак"
+        android:textSize="25sp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/tvQuotes"
+        app:layout_constraintTop_toBottomOf="@+id/ivAnecdotes"
+        android:drawableTop="@drawable/boxer_dog_animal_15972"
+        android:padding="20dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
