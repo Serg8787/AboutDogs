@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentMain">
+
+    <fragment
+        android:id="@+id/fragmentAnecdots"
+        android:name="com.example.homework2_4.FragmentAnecdots"
+        android:label="fragment_anecdots"
+        tools:layout="@layout/fragment_anecdots" >
+        <action
+            android:id="@+id/action_fragmentAnecdots_to_fragmentMain"
+            app:destination="@id/fragmentMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAuthor"
+        android:name="com.example.homework2_4.FragmentAuthor"
+        android:label="fragment_author"
+        tools:layout="@layout/fragment_about_dog" >
+        <action
+            android:id="@+id/action_fragmentAuthor_to_fragmentMain"
+            app:destination="@id/fragmentMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmenSignes"
+        android:name="com.example.homework2_4.FragmenSignes"
+        android:label="fragment_fragmen_signes"
+        tools:layout="@layout/fragment_fragmen_signes" >
+        <action
+            android:id="@+id/action_fragmenSignes_to_fragmentMain"
+            app:destination="@id/fragmentMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHabits"
+        android:name="com.example.homework2_4.FragmentHabits"
+        android:label="fragment_habits"
+        tools:layout="@layout/fragment_habits" >
+        <action
+            android:id="@+id/action_fragmentHabits_to_fragmentMain"
+            app:destination="@id/fragmentMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentQuotes"
+        android:name="com.example.homework2_4.FragmentQuotes"
+        android:label="fragment_quotes"
+        tools:layout="@layout/fragment_quotes" >
+        <action
+            android:id="@+id/action_fragmentQuotes_to_fragmentMain"
+            app:destination="@id/fragmentMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFunnyImages"
+        android:name="com.example.homework2_4.FragmentFunnyImages"
+        android:label="fragment_funny_images"
+        tools:layout="@layout/fragment_funny_images" >
+        <action
+            android:id="@+id/action_fragmentFunnyImages_to_fragmentMain"
+            app:destination="@id/fragmentMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.example.homework2_4.FragmentMain"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentAuthor"
+            app:destination="@id/fragmentAuthor" />
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentAnecdots"
+            app:destination="@id/fragmentAnecdots" />
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentFunnyImages"
+            app:destination="@id/fragmentFunnyImages" />
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentHabits"
+            app:destination="@id/fragmentHabits" />
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentHabits2"
+            app:destination="@id/fragmentHabits" />
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmenSignes"
+            app:destination="@id/fragmenSignes" />
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentQuotes"
+            app:destination="@id/fragmentQuotes" />
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentSignes"
+            app:destination="@id/fragmentSignes" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSignes"
+        android:name="com.example.homework2_4.FragmentSignes"
+        android:label="fragment_signes"
+        tools:layout="@layout/fragment_signes" >
+        <action
+            android:id="@+id/action_fragmentSignes_to_fragmentMain"
+            app:destination="@id/fragmentMain" />
+    </fragment>
+</navigation>

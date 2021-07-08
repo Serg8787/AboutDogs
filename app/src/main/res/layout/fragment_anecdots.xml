@@ -1,14 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FragmentAnecdots">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/grey"
+        android:layout_height="match_parent">
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tvAnecdot1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/anecdot1"
+        style="@style/style_tv"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAnecdot2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/anecdot2"
+        style="@style/style_tv"
+        android:backgroundTint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnecdot1" />
+
+    <TextView
+        android:id="@+id/tvAnecdot3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/anecdot3"
+        android:backgroundTint="@color/birus"
+        style="@style/style_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnecdot2" />
+    <TextView
+        android:id="@+id/tvAnecdot4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/anecdot4"
+        style="@style/style_tv"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnecdot3" />
+    <TextView
+        android:id="@+id/tvAnecdot5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/anecdot5"
+        style="@style/style_tv"
+        android:backgroundTint="@color/green_lite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnecdot4" />
+    <TextView
+        android:id="@+id/tvAnecdot6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/anecdot6"
+        style="@style/style_tv"
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnecdot5" />
+    <TextView
+        android:id="@+id/tvAnecdot7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/anecdot7"
+        style="@style/style_tv"
+        android:backgroundTint="@color/green_lite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnecdot6" />
+    <TextView
+        android:id="@+id/tvAnecdot8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/anecdot8"
+        style="@style/style_tv"
+        android:backgroundTint="@color/birus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnecdot7" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+

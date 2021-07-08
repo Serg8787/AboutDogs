@@ -34,7 +34,7 @@ class FragmentAuthor : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_author, container, false)
+        return inflater.inflate(R.layout.fragment_about_dog, container, false)
     }
 
     companion object {

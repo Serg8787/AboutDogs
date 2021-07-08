@@ -1,14 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".FragmentHabits">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/grey">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/tvHabbit1"
+            android:text="@string/habit1"
+            style="@style/style_tv"
+            android:backgroundTint="@color/orange_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/tvHabbit2"
+            android:text="@string/habit2"
+            style="@style/style_tv"
+            android:backgroundTint="@color/green_lite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHabbit1"/>
+        <TextView
+            android:id="@+id/tvHabit3"
+            android:text="@string/habit10"
+            style="@style/style_tv"
+            android:backgroundTint="@color/yellow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHabbit2"/>
+
+        <TextView
+            android:id="@+id/tvHabbit4"
+            android:text="@string/habit4"
+            style="@style/style_tv"
+            android:backgroundTint="@color/birus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHabit3"/>
+        <TextView
+            android:id="@+id/tvHabbit5"
+            android:text="@string/habit5"
+            style="@style/style_tv"
+            android:backgroundTint="@color/purple_200"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHabbit4"/>
+
+        <TextView
+            android:id="@+id/tvHabbit6"
+            android:text="@string/habit6"
+            style="@style/style_tv"
+            android:backgroundTint="@color/teal_700"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHabbit5"/>
+        <TextView
+            android:id="@+id/tvHabbit7"
+            android:text="@string/habit7"
+            style="@style/style_tv"
+            android:backgroundTint="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHabbit6"/>
+        <TextView
+            android:id="@+id/tvHabit8"
+            android:text="@string/habit8"
+            style="@style/style_tv"
+            android:backgroundTint="@color/yellow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHabbit7"/>
+        <TextView
+            android:id="@+id/tvHabit9"
+            android:text="@string/habit9"
+            style="@style/style_tv"
+            android:backgroundTint="@color/birus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHabit8"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
