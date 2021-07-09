@@ -36,8 +36,8 @@ class FragmentMain : Fragment() {
         fragmenLayout.tvHabits.setOnClickListener { navController.navigate(R.id.fragmentHabits) }
         fragmenLayout.tvQuotes.setOnClickListener { navController.navigate(R.id.fragmentQuotes) }
         fragmenLayout.tvSigns.setOnClickListener { navController.navigate(R.id.fragmentSignes) }
-        fragmenLayout.tvAuthor.setOnClickListener { navController.navigate(R.id.fragmentAuthor) }
         fragmenLayout.tvAnecdotes.setOnClickListener { navController.navigate(R.id.fragmentAnecdots) }
+        fragmenLayout.tvAboutDog.setOnClickListener { navController.navigate(R.id.fragmentAboutDog) }
         return fragmenLayout
 
     }

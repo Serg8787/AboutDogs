@@ -28,4 +28,9 @@
         <item name="android:gravity">center</item>
         <item name="background">@drawable/shape_main</item>
     </style>
+    <style name="style_about_dog">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
 </resources>

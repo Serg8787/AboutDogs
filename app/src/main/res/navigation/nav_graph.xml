@@ -15,24 +15,6 @@
             app:destination="@id/fragmentMain" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentAuthor"
-        android:name="com.example.homework2_4.FragmentAuthor"
-        android:label="fragment_author"
-        tools:layout="@layout/fragment_about_dog" >
-        <action
-            android:id="@+id/action_fragmentAuthor_to_fragmentMain"
-            app:destination="@id/fragmentMain" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragmenSignes"
-        android:name="com.example.homework2_4.FragmenSignes"
-        android:label="fragment_fragmen_signes"
-        tools:layout="@layout/fragment_fragmen_signes" >
-        <action
-            android:id="@+id/action_fragmenSignes_to_fragmentMain"
-            app:destination="@id/fragmentMain" />
-    </fragment>
-    <fragment
         android:id="@+id/fragmentHabits"
         android:name="com.example.homework2_4.FragmentHabits"
         android:label="fragment_habits"
@@ -54,7 +36,7 @@
         android:id="@+id/fragmentFunnyImages"
         android:name="com.example.homework2_4.FragmentFunnyImages"
         android:label="fragment_funny_images"
-        tools:layout="@layout/fragment_funny_images" >
+        tools:layout="@layout/fragment_treni" >
         <action
             android:id="@+id/action_fragmentFunnyImages_to_fragmentMain"
             app:destination="@id/fragmentMain" />
@@ -64,9 +46,6 @@
         android:name="com.example.homework2_4.FragmentMain"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
-        <action
-            android:id="@+id/action_fragmentMain_to_fragmentAuthor"
-            app:destination="@id/fragmentAuthor" />
         <action
             android:id="@+id/action_fragmentMain_to_fragmentAnecdots"
             app:destination="@id/fragmentAnecdots" />
@@ -80,14 +59,18 @@
             android:id="@+id/action_fragmentMain_to_fragmentHabits2"
             app:destination="@id/fragmentHabits" />
         <action
-            android:id="@+id/action_fragmentMain_to_fragmenSignes"
-            app:destination="@id/fragmenSignes" />
-        <action
             android:id="@+id/action_fragmentMain_to_fragmentQuotes"
             app:destination="@id/fragmentQuotes" />
         <action
             android:id="@+id/action_fragmentMain_to_fragmentSignes"
             app:destination="@id/fragmentSignes" />
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentAboutDog"
+            app:destination="@id/fragmentAboutDog"
+            app:enterAnim="@anim/total"
+            app:exitAnim="@anim/total"
+            app:popEnterAnim="@anim/total"
+            app:popExitAnim="@anim/total" />
     </fragment>
     <fragment
         android:id="@+id/fragmentSignes"
@@ -97,5 +80,18 @@
         <action
             android:id="@+id/action_fragmentSignes_to_fragmentMain"
             app:destination="@id/fragmentMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAboutDog"
+        android:name="com.example.homework2_4.FragmentAboutDog"
+        android:label="fragment_about_dog"
+        tools:layout="@layout/fragment_about_dog" >
+        <action
+            android:id="@+id/action_fragmentAboutDog_to_fragmentMain"
+            app:destination="@id/fragmentMain"
+            app:enterAnim="@anim/total"
+            app:exitAnim="@anim/total"
+            app:popEnterAnim="@anim/total"
+            app:popExitAnim="@anim/total" />
     </fragment>
 </navigation>

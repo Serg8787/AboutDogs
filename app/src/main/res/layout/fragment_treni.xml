@@ -4,17 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/grey"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".FragmentHabits">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/grey">
+    tools:context=".FragmentTrenirovki">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/tvTreni1"
-            android:text="@string/habit1"
+            android:text="@string/treni1"
             style="@style/style_tv"
             android:backgroundTint="@color/orange_black"
             app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +21,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
         <TextView
             android:id="@+id/tvTreni2"
-            android:text="@string/habit2"
+            android:text="@string/treni2"
             style="@style/style_tv"
             android:backgroundTint="@color/green_lite"
             app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +29,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvTreni1"/>
         <TextView
             android:id="@+id/tvTreni3"
-            android:text="@string/habit10"
+            android:text="@string/treni3"
             style="@style/style_tv"
             android:backgroundTint="@color/yellow"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +38,7 @@
 
         <TextView
             android:id="@+id/tvTreni4"
-            android:text="@string/habit4"
+            android:text="@string/treni4"
             style="@style/style_tv"
             android:backgroundTint="@color/birus"
             app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +46,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvTreni3"/>
         <TextView
             android:id="@+id/tvTreni5"
-            android:text="@string/habit5"
+            android:text="@string/treni5"
             style="@style/style_tv"
             android:backgroundTint="@color/purple_200"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,35 +55,60 @@
 
         <TextView
             android:id="@+id/tvTreni6"
-            android:text="@string/habit6"
+            android:text="@string/treni6"
             style="@style/style_tv"
-            android:backgroundTint="@color/teal_700"
+            android:backgroundTint="@color/orange_black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvTreni5"/>
         <TextView
-            android:id="@+id/tvHabbit7"
-            android:text="@string/habit7"
+            android:id="@+id/tvTreni7"
+            android:text="@string/treni7"
             style="@style/style_tv"
-            android:backgroundTint="@color/green"
+            android:backgroundTint="@color/green_lite"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvTreni6"/>
         <TextView
-            android:id="@+id/tvHabit8"
-            android:text="@string/habit8"
+            android:id="@+id/tvTreni8"
+            android:text="@string/treni8"
             style="@style/style_tv"
             android:backgroundTint="@color/yellow"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvHabbit7"/>
+            app:layout_constraintTop_toBottomOf="@+id/tvTreni7"/>
         <TextView
-            android:id="@+id/tvHabit9"
-            android:text="@string/habit9"
+            android:id="@+id/tvTreni9"
+            android:text="@string/treni9"
             style="@style/style_tv"
             android:backgroundTint="@color/birus"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvHabit8"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintTop_toBottomOf="@+id/tvTreni8"/>
+        <TextView
+            android:id="@+id/tvTreni10"
+            android:text="@string/treni10"
+            style="@style/style_tv"
+            android:backgroundTint="@color/teal_700"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTreni9"/>
+        <TextView
+            android:id="@+id/tvTreni11"
+            android:text="@string/treni11"
+            style="@style/style_tv"
+            android:backgroundTint="@color/orange_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTreni10"/>
+        <TextView
+            android:id="@+id/tvTreni12"
+            android:text="@string/treni12"
+            style="@style/style_tv"
+            android:backgroundTint="@color/green_lite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTreni11"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>

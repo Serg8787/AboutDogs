@@ -13,7 +13,7 @@
         android:background="@color/grey">
 
     <TextView
-        android:id="@+id/tvHabbit1"
+        android:id="@+id/tvTreni1"
         android:text="@string/sign1"
         style="@style/style_tv"
         android:backgroundTint="@color/orange_black"
@@ -21,47 +21,47 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <TextView
-        android:id="@+id/tvHabbit2"
+        android:id="@+id/tvTreni2"
         android:text="@string/sign2"
         style="@style/style_tv"
         android:backgroundTint="@color/green_lite"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHabbit1"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvTreni1"/>
     <TextView
-        android:id="@+id/tvHabit3"
+        android:id="@+id/tvTreni3"
         android:text="@string/sign3"
         style="@style/style_tv"
         android:backgroundTint="@color/yellow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHabbit2"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvTreni2"/>
 
     <TextView
-        android:id="@+id/tvHabbit4"
+        android:id="@+id/tvTreni4"
         android:text="@string/sign4"
         style="@style/style_tv"
         android:backgroundTint="@color/birus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHabit3"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvTreni3"/>
     <TextView
-        android:id="@+id/tvHabbit5"
+        android:id="@+id/tvTreni5"
         android:text="@string/sign5"
         style="@style/style_tv"
         android:backgroundTint="@color/purple_200"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHabbit4"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvTreni4"/>
 
     <TextView
-        android:id="@+id/tvHabbit6"
+        android:id="@+id/tvTreni6"
         android:text="@string/sign6"
         style="@style/style_tv"
         android:backgroundTint="@color/teal_700"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHabbit5"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvTreni5"/>
     <TextView
         android:id="@+id/tvHabbit7"
         android:text="@string/sign7"
@@ -69,7 +69,7 @@
         android:backgroundTint="@color/green"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHabbit6"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvTreni6"/>
     <TextView
         android:id="@+id/tvHabit8"
         android:text="@string/sign8"
