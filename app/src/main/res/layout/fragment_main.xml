@@ -7,7 +7,7 @@
     tools:context=".FragmentMain">
 
     <TextView
-        android:id="@+id/tvFunnyPictures"
+        android:id="@+id/tvFunnyTreni"
         android:layout_width="200dp"
         android:layout_height="280dp"
         android:text="@string/treni"
@@ -29,7 +29,7 @@
         android:padding="5dp"
         style="@style/style_main_frag"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvFunnyPictures"
+        app:layout_constraintStart_toEndOf="@+id/tvFunnyTreni"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/tvAnecdotes"
         android:drawableTop="@drawable/barbell_dog_animal_15974" />
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toStartOf="@+id/tvAnecdotes"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@color/shoc_green"
-        app:layout_constraintTop_toBottomOf="@+id/tvFunnyPictures"
+        app:layout_constraintTop_toBottomOf="@+id/tvFunnyTreni"
         android:paddingTop="70dp"
         android:drawableTop="@drawable/hulahoop_dog_animal_15957" />
 
@@ -57,7 +57,7 @@
         style="@style/style_main_frag"
         android:padding="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvFunnyPictures"
+        app:layout_constraintStart_toEndOf="@+id/tvFunnyTreni"
         app:layout_constraintTop_toBottomOf="@+id/tvHabits"
         app:layout_constraintBottom_toTopOf="@+id/tvSigns"
         android:drawableTop="@drawable/russel_dog_animal_15954" />

@@ -25,6 +25,7 @@
 
     <style name="style_main_frag">
         <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:gravity">center</item>
         <item name="background">@drawable/shape_main</item>
     </style>

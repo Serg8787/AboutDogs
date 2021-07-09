@@ -32,12 +32,12 @@ class FragmentMain : Fragment() {
         val fragmenLayout = inflater.inflate(R.layout.fragment_main,fragmentContainer,false)
         val navController = NavHostFragment.findNavController(this)
 
-        fragmenLayout.tvFunnyPictures.setOnClickListener { navController.navigate(R.id.fragmentFunnyImages) }
-        fragmenLayout.tvHabits.setOnClickListener { navController.navigate(R.id.fragmentHabits) }
-        fragmenLayout.tvQuotes.setOnClickListener { navController.navigate(R.id.fragmentQuotes) }
-        fragmenLayout.tvSigns.setOnClickListener { navController.navigate(R.id.fragmentSignes) }
-        fragmenLayout.tvAnecdotes.setOnClickListener { navController.navigate(R.id.fragmentAnecdots) }
-        fragmenLayout.tvAboutDog.setOnClickListener { navController.navigate(R.id.fragmentAboutDog) }
+        fragmenLayout.tvFunnyTreni.setOnClickListener { navController.navigate(R.id.action_fragmentMain_to_fragmentFunnyImages) }
+        fragmenLayout.tvHabits.setOnClickListener { navController.navigate(R.id.action_fragmentMain_to_fragmentHabits2) }
+        fragmenLayout.tvQuotes.setOnClickListener { navController.navigate(R.id.action_fragmentMain_to_fragmentQuotes) }
+        fragmenLayout.tvSigns.setOnClickListener { navController.navigate(R.id.action_fragmentMain_to_fragmentSignes) }
+        fragmenLayout.tvAnecdotes.setOnClickListener { navController.navigate(R.id.action_fragmentMain_to_fragmentAnecdots) }
+        fragmenLayout.tvAboutDog.setOnClickListener { navController.navigate(R.id.action_fragmentMain_to_fragmentAboutDog) }
         return fragmenLayout
 
     }

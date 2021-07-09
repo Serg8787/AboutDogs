@@ -33,7 +33,7 @@
             app:destination="@id/fragmentMain" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentFunnyImages"
+        android:id="@+id/fragmentTreni"
         android:name="com.example.homework2_4.FragmentFunnyImages"
         android:label="fragment_funny_images"
         tools:layout="@layout/fragment_treni" >
@@ -48,29 +48,49 @@
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_fragmentMain_to_fragmentAnecdots"
-            app:destination="@id/fragmentAnecdots" />
+            app:destination="@id/fragmentAnecdots"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_fragmentMain_to_fragmentFunnyImages"
-            app:destination="@id/fragmentFunnyImages" />
+            app:destination="@id/fragmentTreni"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_fragmentMain_to_fragmentHabits"
             app:destination="@id/fragmentHabits" />
         <action
             android:id="@+id/action_fragmentMain_to_fragmentHabits2"
-            app:destination="@id/fragmentHabits" />
+            app:destination="@id/fragmentHabits"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_fragmentMain_to_fragmentQuotes"
-            app:destination="@id/fragmentQuotes" />
+            app:destination="@id/fragmentQuotes"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_fragmentMain_to_fragmentSignes"
-            app:destination="@id/fragmentSignes" />
+            app:destination="@id/fragmentSignes"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_fragmentMain_to_fragmentAboutDog"
             app:destination="@id/fragmentAboutDog"
-            app:enterAnim="@anim/total"
-            app:exitAnim="@anim/total"
-            app:popEnterAnim="@anim/total"
-            app:popExitAnim="@anim/total" />
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/fragmentSignes"
@@ -88,10 +108,6 @@
         tools:layout="@layout/fragment_about_dog" >
         <action
             android:id="@+id/action_fragmentAboutDog_to_fragmentMain"
-            app:destination="@id/fragmentMain"
-            app:enterAnim="@anim/total"
-            app:exitAnim="@anim/total"
-            app:popEnterAnim="@anim/total"
-            app:popExitAnim="@anim/total" />
+            app:destination="@id/fragmentMain" />
     </fragment>
 </navigation>
